@@ -1,0 +1,6 @@
+# This is a list of python packages used to generate documentation. This file is used with pip:
+# pip install --user -r requirements.txt
+#
+psutil>=5.6.3
+serial
+pyserial>=3.4
