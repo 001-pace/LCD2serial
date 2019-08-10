@@ -166,7 +166,7 @@ try:
 			# ------------------------- end ----------------------------------------
 			
 			# ---------get work result ------------
-			lcd_statu = int(ser.read().hex())
+			lcd_statu = int(ser.read().hex(), base=16)
 			if(lcd_statu != 0x01):
 				print('display fail ' + get_time())
 			#-------------------------------------
