@@ -168,12 +168,12 @@ void lcd1602_init(void)
 }
 
 
-void show(int x, int y, uint8_t *dat, int len)
+void show(int x, int y, char *dat, int len)
 {
   int i=0;
   lcd_set_xy(x,y);    //set addr
   while (i<len) {          //write string
-    lcd_write_data(dat[i]);
+    lcd_write_data((uint8_t)dat[i]);
     i++;
   }
 }
